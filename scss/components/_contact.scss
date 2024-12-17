@@ -1,0 +1,27 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $secondary-color;
+  color: $white;
+  font-family: $heading-font;
+}
+
+.contact-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

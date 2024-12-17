@@ -1,7 +1,4 @@
-const menuToggle = document.querySelector(".menu__toggle");
-const menuList = document.querySelector(".menu__list");
-
-menuToggle.addEventListener("click", () => {
-  menuList.classList.toggle("active");
-  menuToggle.classList.toggle("active");
+document.getElementById("menu-toggle").addEventListener("click", function () {
+  const menuList = document.getElementById("menu-list");
+  menuList.classList.toggle("menu__list--open");
 });

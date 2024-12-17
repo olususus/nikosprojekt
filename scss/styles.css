@@ -76,6 +76,14 @@
   display: flex;
   gap: 1rem;
   align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+.menu__list--open {
+  display: flex;
+  animation: slideDown 0.3s ease-in-out;
 }
 .menu__list li a {
   color: #ffffff;
@@ -89,6 +97,16 @@
   background-color: #aa8aea;
 }
 
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 header {
   background-color: #8a5fe2;
   color: #ffffff;
@@ -109,7 +127,7 @@ header h2 {
 }
 
 footer {
-  background: linear-gradient(to right, #8a5fe2, #f7c600);
+  background: linear-gradient(to right, #8a5fe2, #8a5fe2);
   color: #fff;
   text-align: center;
   padding: 2rem 0;
@@ -334,6 +352,87 @@ h2:hover {
   background-color: #f7c600;
 }
 
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   background-color: #1a1a1a;
   color: #ffffff;

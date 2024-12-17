@@ -1,37 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Help</title>
+    <title>FAQ</title>
     <link rel="stylesheet" href="scss/styles.css" />
   </head>
+
   <body>
     <header>
       <nav class="menu">
-        <button class="menu__toggle">Menu</button>
-        <ul class="menu__list">
+        <button class="menu__toggle" id="menu-toggle">KFC</button>
+        <ul class="menu__list" id="menu-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="help.html">Help</a></li>
+          <li><a href="faq.html">FAQ</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <section class="help">
-        <h1>Help & FAQ</h1>
-        <details>
-          <summary>How to use the website?</summary>
-          <p>Details about how to navigate and use the website.</p>
-        </details>
+      <section class="faq-section">
+        <h1>Najczęściej Zadawane Pytania</h1>
+        <div class="faq-item">
+          <h2 class="faq-question">Jak wynająć pracownika?</h2>
+          <p class="faq-answer">nigger nigger nigger nigger</p>
+        </div>
+        <div class="faq-item">
+          <h2 class="faq-question">
+            Co zrobić, jeśli pracownik nie spełnia oczekiwań?
+          </h2>
+          <p class="faq-answer">
+            Skontaktuj się z nami, a my pomożemy Ci znaleźć odpowiedniego
+            pracownika.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h2 class="faq-question">Jakie są metody płatności?</h2>
+          <p class="faq-answer">
+            Akceptujemy wszystkie popularne metody płatności, w tym karty
+            kredytowe oraz przelewy online.
+          </p>
+        </div>
       </section>
     </main>
+
     <footer>
-      <p>© 2024 Project. All rights reserved.</p>
+      <p>&copy; 2024 KFC</p>
     </footer>
+
     <script src="js/menu.js"></script>
   </body>
 </html>

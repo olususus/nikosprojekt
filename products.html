@@ -10,14 +10,15 @@
   <body>
     <header>
       <nav class="menu">
-        <button class="menu__toggle">Menu</button>
-        <ul class="menu__list">
+        <button class="menu__toggle" id="menu-toggle">KFC</button>
+        <ul class="menu__list" id="menu-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="help.html">Help</a></li>
+          <li><a href="faq.html">FAQ</a></li>
         </ul>
       </nav>
     </header>
@@ -25,40 +26,38 @@
     <main>
       <section class="product-rental">
         <h1>Wynajem Pracowników</h1>
-        <p>
-          Wybierz pracownika do wynajęcia spośród dostępnych ofert! (oprocz
-          pierwszego on nie jest na sprzedaz)
-        </p>
+        <p>Wybierz pracownika do wynajęcia spośród dostępnych ofert!</p>
 
         <div class="worker-list">
           <div class="worker-item">
-            <img src="images/gallery/image1.jpg" alt="Pracownik 1" />
-            <p>Piękny <3</p>
-            <button class="rental-btn">Wynajmij</button>
+            <img src="images/gallery/nigger1.jpg" alt="Pracownik 1" />
+            <p>Pracownik 1</p>
+            <button class="rental-btn" onclick="showAlert()">Wynajmij</button>
           </div>
           <div class="worker-item">
             <img src="images/gallery/nigger1.jpg" alt="Pracownik 2" />
             <p>Pracownik 2</p>
-            <button class="rental-btn">Wynajmij</button>
+            <button class="rental-btn" onclick="showAlert()">Wynajmij</button>
           </div>
           <div class="worker-item">
             <img src="images/gallery/nigger2.jpg" alt="Pracownik 3" />
             <p>Pracownik 3</p>
-            <button class="rental-btn">Wynajmij</button>
+            <button class="rental-btn" onclick="showAlert()">Wynajmij</button>
           </div>
           <div class="worker-item">
             <img src="images/gallery/nigger3.jpg" alt="Pracownik 4" />
             <p>Pracownik 4</p>
-            <button class="rental-btn">Wynajmij</button>
+            <button class="rental-btn" onclick="showAlert()">Wynajmij</button>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2024 Wynajem Pracowników</p>
+      <p>&copy; 2024 KFC</p>
     </footer>
 
     <script src="js/menu.js"></script>
+    <script src="js/products.js"></script>
   </body>
 </html>
