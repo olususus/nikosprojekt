@@ -1,16 +1,25 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const galleryContainer = document.querySelector(".gallery__container");
-  const images = [
-    "images/gallery/image1.jpg",
-    "images/gallery/image2.jpg",
-    "images/gallery/image3.jpg",
-  ];
+document.addEventListener("DOMContentLoaded", function () {
+  const prevButton = document.querySelector(".carousel__button.prev");
+  const nextButton = document.querySelector(".carousel__button.next");
+  const images = document.querySelectorAll(".carousel__image");
+  let currentIndex = 0;
 
-  images.forEach((src) => {
-    const img = document.createElement("img");
-    img.src = src;
-    img.alt = "Gallery Image";
-    img.classList.add("gallery__image");
-    galleryContainer.appendChild(img);
+  function changeImage(index) {
+    images.forEach((image, i) => {
+      image.classList.remove("active");
+      if (i === index) {
+        image.classList.add("active");
+      }
+    });
+  }
+
+  prevButton.addEventListener("click", function () {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    changeImage(currentIndex);
+  });
+
+  nextButton.addEventListener("click", function () {
+    currentIndex = (currentIndex + 1) % images.length;
+    changeImage(currentIndex);
   });
 });

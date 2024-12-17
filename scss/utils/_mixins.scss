@@ -1,19 +1,42 @@
-// Przykładowe mixiny
+// Efekt hover z zaokrągleniami
+@mixin hover-effect($color: $accent-color) {
+  transition: transform $transition-fast, box-shadow $transition-fast;
+  border-radius: $border-radius;
 
-// Media queries
-@mixin respond($breakpoint) {
-  @if $breakpoint == small {
-    @media (max-width: 600px) {
-      @content;
-    }
-  } @else if $breakpoint == medium {
-    @media (max-width: 900px) {
-      @content;
-    }
-  } @else if $breakpoint == large {
-    @media (max-width: 1200px) {
-      @content;
-    }
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: $box-shadow-heavy;
+    color: $color;
+  }
+}
+
+// Zaokrąglone przyciski
+@mixin button($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $small-spacing $large-spacing;
+  border-radius: $border-radius;
+  border: none;
+  cursor: pointer;
+  transition: background-color $transition-medium, transform $transition-fast;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+    transform: translateY(-3px);
+  }
+}
+
+// Animacje fade-in
+@mixin fade-in {
+  animation: fadeIn $transition-slow ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -22,10 +45,10 @@
   background-color: $bg-color;
   color: $text-color;
   padding: $small-spacing $large-spacing;
-  border-radius: 5px;
+  border-radius: 8px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color $transition-medium;
 
   &:hover {
     background-color: darken($bg-color, 10%);

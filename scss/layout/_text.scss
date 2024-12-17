@@ -1,0 +1,23 @@
+// Stylizacja tekstu na stronie
+h2 {
+  color: $text-color;
+  background-color: transparent;
+  padding: $small-spacing;
+  border: 2px solid $accent-color;
+  border-radius: $border-radius;
+  font-family: $font-family;
+  line-height: 1.5;
+  text-align: justify;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+
+  &:hover {
+    background-color: rgba($accent-color, 0.1);
+    transform: translateY(-5px);
+  }
+}
+
+.intro {
+  text-align: center;
+}

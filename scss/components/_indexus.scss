@@ -1,28 +1,32 @@
-.product-rental {
+.intro {
   text-align: center;
   padding: $large-spacing 0;
   background-color: $secondary-color;
 }
 
-.product-rental h1 {
+.intro h1 {
+  font-family: $heading-font;
+  color: $white;
+  font-size: 2.5rem;
+  margin-bottom: $small-spacing;
+}
+
+.intro p {
+  color: $white;
+  font-size: 1.2rem;
+  margin-bottom: $large-spacing;
+}
+
+.featured-worker {
+  text-align: center;
+  padding: $large-spacing 0;
+}
+
+.featured-worker h2 {
   font-family: $heading-font;
   color: $white;
   font-size: 2rem;
   margin-bottom: $small-spacing;
-}
-
-.product-rental p {
-  color: $white;
-  font-size: 1.1rem;
-  margin-bottom: $large-spacing;
-}
-
-.worker-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: $large-spacing;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .worker-item {
@@ -30,11 +34,9 @@
   border-radius: $border-radius;
   box-shadow: $box-shadow-light;
   overflow: hidden;
-  transition: transform $transition-fast ease;
-}
-
-.worker-item:hover {
-  transform: translateY(-5px);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: $base-spacing;
 }
 
 .worker-item img {
@@ -46,9 +48,10 @@
 
 .worker-item p {
   color: $white;
+  font-size: 1.2rem;
   padding: $small-spacing;
   background-color: $primary-color;
-  font-size: 1.2rem;
+  margin-top: $small-spacing;
 }
 
 .rental-btn {

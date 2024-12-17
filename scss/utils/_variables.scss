@@ -8,9 +8,23 @@ $dark-gray: #444;
 
 // Czcionki
 $font-family: "Montserrat", sans-serif;
-$heading-font: "Roboto", sans-serif;
+$heading-font: "Montserrat", sans-serif;
+
+// Animacje
+$transition-fast: 0.3s;
+$transition-medium: 0.5s;
+$transition-slow: 0.8s;
+
+// Cienie
+$box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+$box-shadow-heavy: 0 6px 20px rgba(0, 0, 0, 0.2);
 
 // Przestrzeń
 $base-spacing: 1rem;
 $small-spacing: 0.5rem;
 $large-spacing: 2rem;
+
+$background-color: #1a1a1a;
+$card-background: #252525;
+$text-color: #ffffff;
+$border-radius: 12px; // Zaokrąglenia

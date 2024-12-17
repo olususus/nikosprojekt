@@ -1,12 +1,16 @@
 header {
   background-color: $primary-color;
-  color: $white;
-  padding: $base-spacing;
+  color: $text-color;
+  padding: $large-spacing;
+  text-align: center;
   font-family: $heading-font;
+  border-radius: $border-radius;
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0;
+    @include fade-in;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }
 
   h2 {

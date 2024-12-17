@@ -7,3 +7,13 @@
 @import "components/footer";
 @import "components/gallery";
 @import "components/products";
+@import "layout/text";
+@import "components/indexus";
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
