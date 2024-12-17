@@ -1,0 +1,166 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+}
+
+.col {
+  padding: 1rem;
+  flex: 1;
+  box-sizing: border-box;
+}
+.col--2 {
+  flex: 0 0 50%;
+}
+.col--3 {
+  flex: 0 0 33.33%;
+}
+.col--4 {
+  flex: 0 0 25%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.menu {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.menu__toggle {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.menu__list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.menu__list li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem 2rem;
+  transition: color 0.3s;
+}
+.menu__list li a:hover {
+  color: #f7c600;
+}
+
+header {
+  background-color: #8a5fe2;
+  color: #fff;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+header h2 {
+  font-size: 1.75rem;
+  margin: 0.5rem 0;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  font-family: "Montserrat", sans-serif;
+}
+footer p {
+  margin: 0;
+}
+
+.gallery .worker-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.gallery .worker-gallery .worker-item {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.gallery .worker-gallery .worker-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #888;
+}
+.gallery .worker-gallery .worker-item p {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.products .worker-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.products .worker-list .worker-item {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.products .worker-list .worker-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #888;
+}
+.products .worker-list .worker-item p {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+.products .worker-list .worker-item button {
+  background-color: #8a5fe2;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  padding: 0.75rem;
+}
+.products .worker-list .worker-item button:hover {
+  background-color: #6a34da;
+}/*# sourceMappingURL=styles.css.map */

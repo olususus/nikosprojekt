@@ -1,0 +1,37 @@
+.menu {
+  background-color: $secondary-color;
+  color: $white;
+  padding: $base-spacing;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  &__toggle {
+    background-color: transparent;
+    border: none;
+    color: $white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: $base-spacing;
+    align-items: center;
+
+    li {
+      a {
+        color: $white;
+        text-decoration: none;
+        font-family: $font-family;
+        padding: $small-spacing $large-spacing;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}

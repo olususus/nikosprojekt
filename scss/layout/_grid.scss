@@ -1,0 +1,31 @@
+// Siatka
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $base-spacing;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$base-spacing;
+}
+
+.col {
+  padding: $base-spacing;
+  flex: 1;
+  box-sizing: border-box;
+
+  &--2 {
+    flex: 0 0 50%;
+  }
+
+  &--3 {
+    flex: 0 0 33.33%;
+  }
+
+  &--4 {
+    flex: 0 0 25%;
+  }
+}

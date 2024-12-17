@@ -1,0 +1,16 @@
+header {
+  background-color: $primary-color;
+  color: $white;
+  padding: $base-spacing;
+  font-family: $heading-font;
+
+  h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    margin: $small-spacing 0;
+  }
+}

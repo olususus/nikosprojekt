@@ -1,0 +1,11 @@
+footer {
+  background-color: $secondary-color;
+  color: $white;
+  text-align: center;
+  padding: $large-spacing 0;
+  font-family: $font-family;
+
+  p {
+    margin: 0;
+  }
+}

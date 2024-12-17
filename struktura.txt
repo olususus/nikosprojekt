@@ -1,0 +1,34 @@
+projekt/
+├── index.html
+├── about.html
+├── products.html
+├── contact.html
+├── gallery.html
+├── help.html
+├── js/
+│   ├── menu.js
+│   ├── gallery.js
+│   ├── products.js
+├── scss/
+│   ├── styles.scss
+│   ├── components/
+│   │   ├── _menu.scss
+│   │   ├── _header.scss
+│   │   ├── _footer.scss
+│   │   ├── _gallery.scss
+│   │   ├── _products.scss
+│   ├── layout/
+│   │   ├── _grid.scss
+│   │   ├── _flex.scss
+│   ├── utils/
+│   │   ├── _variables.scss
+│   │   ├── _mixins.scss
+├── css/
+│   └── styles.css
+├── images/
+│   ├── gallery/
+│   │   ├── image1.jpg
+│   │   ├── image2.jpg
+│   ├── icons/
+│   │   ├── menu.svg
+│   │   ├── contact.svg
